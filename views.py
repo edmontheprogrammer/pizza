@@ -15,9 +15,6 @@ def features(request):
 
 def order(request):
     if request.method == "POST":
-        # This line is creating a new form object
-        # This line is requied if you want to store photos
-        # and other media files in the database
         filled_form = PizzaForm(request.POST, request.FILES)
 
         filled_form = PizzaForm(request.POST)
