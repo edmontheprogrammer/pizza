@@ -1,0 +1,154 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Pizza App</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link rel="stylesheet" href="{% static 'pizza/css/styles.css' %}" />
+  </head>
+  <body>
+    <!-- Responsive navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="{% url 'pizza:index' %}">Pizza App</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                aria-current="page"
+                href="{% url 'pizza:index' %}"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'pizza:order' %}">Order Pizza</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'pizza:about' %}">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'pizza:features' %}">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'pizza:contact' %}">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Header - set the background image for the header in the line below-->
+    <header
+      class="py-5 bg-image-full"
+      style="
+        background-image: url({% static '/pizza/assets/images/pizza_image_1.jpg' %})">
+      <div class="text-center my-5 heading-elements-box">
+        <h1 class="text-white fs-3 fw-bolder">Tasty Pizza</h1>
+        <p class="text-white-50 mb-0">
+          Simply order and we'll take care of everything
+        </p>
+      </div>
+    </header>
+    <!-- Content section-->
+    <section class="py-5">
+      <div class="container my-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <h2>Contents About the Pizza Restaurant</h2>
+            <p class="lead">
+              Diam tincidunt nam fermentum aptent erat metus interdum penatibus,
+              parturient risus commodo tempor justo velit quis aliquam,
+              sagittis molestie vulputate phasellus quisque tellus sit.
+              Varius eleifend non himenaeos tellus aenean vivamus aptent ultricies feugiat,
+              amet turpis orci nec mattis at facilisi accumsan cras,
+              ultrices imperdiet massa blandit mauris facilisis mus class.
+              Neque phasellus diam tempus lacinia bibendum leo dolor curae aliquet interdum felis,
+              porttitor nostra fusce turpis curabitur suspendisse feugiat parturient sit ad accumsan consequat,
+              aptent fames dignissim dictumst potenti facilisi justo iaculis cubilia maecenas.
+              Viverra massa sed euismod sociis venenatis urna fusce bibendum,
+              taciti ipsum id a pharetra et cras consequat phasellus,
+               nostra augue ultricies vel curabitur lectus egestas.
+
+            Litora aliquam sed lectus dignissim laoreet accumsan mattis viverra,
+            curabitur habitasse quisque consectetur placerat venenatis pulvinar duis himenaeos,
+            dapibus euismod lorem convallis ultricies integer potenti. Nibh quisque volutpat ullamcorper
+            ligula habitant sociis pulvinar, euismod ipsum posuere lacus proin in senectus,
+            </p>
+            <p class="lead">
+               ullamcorper malesuada orci ante. Risus imperdiet eros pulvinar lectus a turpis elementum,
+               conubia ante cum penatibus hac fermentum sollicitudin curabitur,
+               ornare inceptos habitant urna tellus porta.
+               Fusce viverra rhoncus rutrum enim hac felis et volutpat tempor sagittis tempus nibh,
+               iaculis donec orci euismod ullamcorper sapien in cras senectus sem gravida.
+               Dignissim suspendisse arcu nec pulvinar ultrices et morbi, praesent malesuada venenatis litora diam auctor,
+                dapibus eleifend platea sit sem penatibus.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Image element - set the background image for the header in the line below-->
+    <div
+      class="py-5 bg-image-full"
+      style="
+        background-image: url({% static '/pizza/assets/images/pizza_image_2.jpg' %})">
+      <!-- Put anything you want here! The spacer below with inline CSS is just for demo purposes!-->
+      <div style="height: 20rem"></div>
+    </div>
+    <!-- Content section-->
+    <section class="py-5">
+      <div class="container my-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <h2>More Contents About the Pizza Restaurant</h2>
+            <p class="lead">The weekends is better with Pizza</p>
+            <p class="lead">
+              Nibh est a ut suspendisse tempor enim primis blandit ligula sagittis arcu vitae,
+              nunc dictum nec fusce pellentesque nulla fames imperdiet mi neque.
+              Fusce duis amet sem varius sed consequat nascetur curabitur,
+              convallis conubia tincidunt turpis porttitor augue.
+               Iaculis est nisi conubia etiam fusce id tortor habitant nulla tempor pellentesque penatibus habitasse,
+                lorem eleifend accumsan neque pharetra curabitur placerat nisl hendrerit mattis felis amet.
+                Hac euismod bibendum quam lacinia elementum ante pretium sem tempus,
+                fames parturient consequat himenaeos iaculis ullamcorper ultrices laoreet varius,
+                setiam quisque porta consectetur at porttitor
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">
+          Copyright &copy; Pizza App 2023
+        </p>
+      </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <!-- <script src="js/scripts.js"></script> -->
+    <script src="{% static 'pizza/js/scripts.js' %}"></script>
+  </body>
+</html>

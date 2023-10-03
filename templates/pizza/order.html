@@ -1,0 +1,21 @@
+{% extends 'pizza/base.html' %}
+
+{% block content %}
+
+<h1>Order a pizza</h1>
+<h2>{{ note }}</h2>
+{% if created_pizza_pk %}
+
+<a href="{% url 'pizza:edit_order' created_pizza_pk %}">Edit Your Order</a>
+
+{% endif %}
+
+<form enctype="multipart/form-data" action="{% url 'pizza:order' %}" method="post">
+  <form action="{% url 'pizza:order' %}" method="post">
+    {% csrf_token %} {{ pizzaform.as_p }}
+
+    <input type="submit" value="Order Pizza" class="btn btn-secondary btn-lg order-button"    />
+  </form>
+</form>
+
+{% endblock %}
